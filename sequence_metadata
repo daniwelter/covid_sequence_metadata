@@ -1,0 +1,203 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "sequence_metadata",
+  "description": "Information about the source of the sequence and how it was generated",
+  "additionalProperties": true,
+  "required": [
+    "sample.host_species",
+    "sample.host_common_name"
+    "sample.host_health_name",
+    "sample.host_sex"
+  ],
+  "title": "Sequence metadata",
+  "name": "sequence_metadata",
+  "type": "object",
+  "properties": {
+  	"virus":{
+  		"type": "object"
+  		"properties": {
+  			"virus_name": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+  			"accession_id": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+		  	"virus_type": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+		  	"passage_details": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		}
+  		}
+  	},
+  	"sample":{
+  		"type": "object"
+  		"properties": {	
+    		"collection_date": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"collection_location": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"additional_collection_information": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"host_species": {
+	        	"description": "The scientific binomial name for the species of the host.",
+      			"type": "string"
+      			"example": "Homo sapiens"
+    		},
+    		"host_common_name":{
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		}
+    		"additional_host_information": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"host_sex": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"host_age": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"host_health_status": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"specimen_source": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"outbreak_detail": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"host_treatment": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"host_inoculation": {
+    			"description": "",
+    			"type": "object",
+    			"properties": {
+    				"host_description": {
+    					"description": "",
+    					"type": "",
+    					"example": ""
+    				},
+    				"inoculation_route": {
+    					"description": "",
+    					"type": "",
+    					"example": ""
+    				},
+    				"inoculation_dose": {
+    					"description": "",
+    					"type": "",
+    					"example": ""
+    				},
+    				"inoculation_stock_availability": {
+    					"description": "",
+    					"type": "",
+    					"example": ""
+    				}
+    			}
+    		},
+    		"sample_sequencing_technology": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"sequence_assembly_method": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"sequencing_coverage": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		}
+    	}
+  	},
+  	"institution":{
+  		"type": "object"
+  		"properties": {
+  			"originating_lab": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"address": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"provider_sample_id": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"submitting_lab": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"submitter_sample_id": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"authors": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		}
+  		}
+  	},
+  	"submitter":{
+  		"type": "object"
+  		"properties": {
+  			"submitter": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"submission_date": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		},
+    		"address": {
+    			"description": "",
+    			"type": "",
+    			"example": ""
+    		}
+  		}
+  	}
+  }
+}
